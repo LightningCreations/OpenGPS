@@ -2,9 +2,8 @@ CXX=clang++
 CC=clang
 PREFIX=/usr
 
-CXXFLAGS= -std=c++17
-CFLAGS=-g -Iinclude -Wno-incompatible-pointer-types
-CDIALECT = -std=c11
+CXXFLAGS=-g -Iinclude -Wno-incompatible-pointer-types -std=c++17
+CFLAGS=-g -Iinclude -Wno-incompatible-pointer-types -std=c17
 LDFLAGS=
 LIBS=-llc -lssl
 
@@ -12,8 +11,15 @@ BINDIR=bin
 INCDIR=include
 SRCDIR=src
 
+CSRC=
+CPPSRC=$(SRCDIR)/main.cpp $(SRCDIR)/opengps.cpp
+
 HFILES=$(INCDIR)/opengps.hpp
+<<<<<<< HEAD
 OFILES= $(BINDIR)/opengps.o $(BINDIR)/main.o
+=======
+OFILES=$(CSRC:.c=.o) $(CPPSRC:.cpp=.o)
+>>>>>>> branch 'master' of https://github.com/LightningCreations/OpenGPS.git
 
 TARGET=$(BINDIR)/OpenGPS
 
@@ -33,11 +39,3 @@ install: $(TARGET)
 
 $(TARGET): $(OFILES)
 	$(CXX) -o $(TARGET) $(LDFLAGS) $(OFILES) $(LIBS)
-
-$(BINDIR)/%.o: $(SRCDIR)/%.cpp
-	$(CXX) $(CFLAGS) $(CXXFLAGS) -c $@ $^
-	
-$(BINDIR)/%.o: $(SRCDIR)/%.c
-	$(CC) $(CFLAGS) $(CDIALECT) -c $@ $^
-	
-	
