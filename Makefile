@@ -6,14 +6,14 @@ CXXFLAGS= -std=c++17
 CFLAGS=-g -Iinclude -Wno-incompatible-pointer-types
 CDIALECT = -std=c11
 LDFLAGS=
-LIBS=-llc-c++ -lssl
+LIBS=-llc -lssl
 
 BINDIR=bin
 INCDIR=include
 SRCDIR=src
 
 HFILES=$(INCDIR)/opengps.hpp
-OFILES= $(BINDIR)/opengps.cpp $(BINDIR)/main.cpp
+OFILES= $(BINDIR)/opengps.o $(BINDIR)/main.o
 
 TARGET=$(BINDIR)/OpenGPS
 

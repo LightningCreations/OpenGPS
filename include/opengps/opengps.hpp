@@ -8,9 +8,9 @@
 #ifndef __INCLUDE_OPENGPS_HPP__2018_11_21_23_59_47
 #define __INCLUDE_OPENGPS_HPP__2018_11_21_23_59_47
 
-#include <lclib-cxx/Config.hpp>
+#include <lclib/Config.hpp>
 #include <cstdint>
-#include <lclib-cxx/Vector.hpp>
+#include <lclib/Vector.hpp>
 
 struct GPSCoord{
 	uint8_t degrees;
