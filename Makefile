@@ -4,7 +4,7 @@ PREFIX=/usr
 CPPFLAGS=
 CFLAGS=-g -Iinclude -Wno-incompatible-pointer-types
 LDFLAGS=
-LIBS=-llc-c++ -lssl
+LIBS=-llc -lssl
 
 BINDIR=bin
 INCDIR=include
