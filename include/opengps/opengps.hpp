@@ -19,7 +19,7 @@ struct GPSCoord{
 };
 
 Vec2<std::uint64_t> fromGPSCoords(Vec2<GPSCoord>);
-Vec2<GPSCoord> toGPSCoords(Vec2<std::int64_t>);
+Vec2<GPSCoord> toGPSCoords(Vec2<std::uint64_t>);
 
 
 
