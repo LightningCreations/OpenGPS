@@ -1,8 +1,10 @@
-CXX=g++
+CXX=clang++
+CC=clang
 PREFIX=/usr
 
-CPPFLAGS=
+CXXFLAGS= -std=c++17
 CFLAGS=-g -Iinclude -Wno-incompatible-pointer-types
+CDIALECT = -std=c11
 LDFLAGS=
 LIBS=-llc -lssl
 
@@ -10,9 +12,8 @@ BINDIR=bin
 INCDIR=include
 SRCDIR=src
 
-SRCFILES=$(SRCDIR)/main.cpp $(SRCDIR)/opengps.cpp
-HFILES=$(INCDIR)/opengps.h
-OFILES=$(SRCFILES:.cpp=.o)
+HFILES=$(INCDIR)/opengps.hpp
+OFILES= $(BINDIR)/opengps.cpp $(BINDIR)/main.cpp
 
 TARGET=$(BINDIR)/OpenGPS
 
@@ -33,5 +34,10 @@ install: $(TARGET)
 $(TARGET): $(OFILES)
 	$(CXX) -o $(TARGET) $(LDFLAGS) $(OFILES) $(LIBS)
 
-$(OFILES): $(HFILES) $(SRCDIR)/opengpsInt.h
-
+$(BINDIR)/%.o: $(SRCDIR)/%.cpp
+	$(CXX) $(CFLAGS) $(CXXFLAGS) -c $@ $^
+	
+$(BINDIR)/%.o: $(SRCDIR)/%.c
+	$(CC) $(CFLAGS) $(CDIALECT) -c $@ $^
+	
+	
