@@ -2,9 +2,8 @@ CXX=clang++
 CC=clang
 PREFIX=/usr
 
-CXXFLAGS=-std=c++17
-CFLAGS=-g -Iinclude -Wno-incompatible-pointer-types
-CFLAGS=-std=c11
+CXXFLAGS=-g -Iinclude -Wno-incompatible-pointer-types -std=c++17
+CFLAGS=-g -Iinclude -Wno-incompatible-pointer-types -std=c17
 LDFLAGS=
 LIBS=-llc -lssl
 

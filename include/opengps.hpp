@@ -5,12 +5,12 @@
  *      Author: chorm
  */
 
-#ifndef __INCLUDE_OPENGPS_HPP__2018_11_21_23_59_47
-#define __INCLUDE_OPENGPS_HPP__2018_11_21_23_59_47
+#ifndef OPENGPS_HPP
+#define OPENGPS_HPP
 
-#include <lclib-cxx/Config.hpp>
+#include <lclib/Config.hpp>
 #include <cstdint>
-#include <lclib-cxx/Vector.hpp>
+#include <lclib/Vector.hpp>
 
 struct GPSCoord{
 	uint8_t degrees;
@@ -24,4 +24,4 @@ Vec2<GPSCoord> toGPSCoords(Vec2<std::int64_t>);
 
 
 
-#endif /* __INCLUDE_OPENGPS_HPP__2018_11_21_23_59_47 */
+#endif /* OPENGPS_HPP */
