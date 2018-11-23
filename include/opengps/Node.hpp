@@ -8,9 +8,9 @@
 #ifndef __INCLUDE_NODE_HPP__2018_11_22_00_08_03
 #define __INCLUDE_NODE_HPP__2018_11_22_00_08_03
 
-#include <lclib-cxx/Vector.hpp>
-#include <lclib-cxx/UUID.hpp>
-#include <lclib-cxx/IOWrapper.hpp>
+#include <lclib/Vector.hpp>
+#include <lclib/UUID.hpp>
+#include <lclib/IOWrapper.hpp>
 #include <cstdint>
 #include <list>
 #include <optional>
@@ -32,7 +32,7 @@ struct Node{
 constexpr UUID GLOBE{0,0};
 
 const Node& getNodeById(UUID);
-void loadMap(const std::filesystem::path&);
+void openMap(const std::filesystem::path&);
 
 enum class Direction{
 	NORTH, SOUTH, EAST, WEST
