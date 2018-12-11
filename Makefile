@@ -3,7 +3,7 @@ CC=clang
 PREFIX=/usr
 
 CXXFLAGS=-g -Iinclude -Wno-incompatible-pointer-types -std=c++17
-CFLAGS=-g -Iinclude -Wno-incompatible-pointer-types -std=c17
+CFLAGS=-g -Iinclude -Wno-incompatible-pointer-types -std=c11
 LDFLAGS=
 LIBS=-llc -lssl
 
@@ -15,11 +15,7 @@ CSRC=
 CPPSRC=$(SRCDIR)/main.cpp $(SRCDIR)/opengps.cpp
 
 HFILES=$(INCDIR)/opengps.hpp
-<<<<<<< HEAD
 OFILES= $(BINDIR)/opengps.o $(BINDIR)/main.o
-=======
-OFILES=$(CSRC:.c=.o) $(CPPSRC:.cpp=.o)
->>>>>>> branch 'master' of https://github.com/LightningCreations/OpenGPS.git
 
 TARGET=$(BINDIR)/OpenGPS
 

@@ -1,0 +1,13 @@
+eclipse.preferences.version=1
+environment/buildEnvironmentInclude/cdt.managedbuild.config.llvm.clang.win32.mingw.exe.debug.744503438/CPATH/delimiter=;
+environment/buildEnvironmentInclude/cdt.managedbuild.config.llvm.clang.win32.mingw.exe.debug.744503438/CPATH/operation=remove
+environment/buildEnvironmentInclude/cdt.managedbuild.config.llvm.clang.win32.mingw.exe.debug.744503438/CPLUS_INCLUDE_PATH/delimiter=;
+environment/buildEnvironmentInclude/cdt.managedbuild.config.llvm.clang.win32.mingw.exe.debug.744503438/CPLUS_INCLUDE_PATH/operation=remove
+environment/buildEnvironmentInclude/cdt.managedbuild.config.llvm.clang.win32.mingw.exe.debug.744503438/C_INCLUDE_PATH/delimiter=;
+environment/buildEnvironmentInclude/cdt.managedbuild.config.llvm.clang.win32.mingw.exe.debug.744503438/C_INCLUDE_PATH/operation=remove
+environment/buildEnvironmentInclude/cdt.managedbuild.config.llvm.clang.win32.mingw.exe.debug.744503438/append=true
+environment/buildEnvironmentInclude/cdt.managedbuild.config.llvm.clang.win32.mingw.exe.debug.744503438/appendContributed=true
+environment/buildEnvironmentLibrary/cdt.managedbuild.config.llvm.clang.win32.mingw.exe.debug.744503438/LIBRARY_PATH/delimiter=;
+environment/buildEnvironmentLibrary/cdt.managedbuild.config.llvm.clang.win32.mingw.exe.debug.744503438/LIBRARY_PATH/operation=remove
+environment/buildEnvironmentLibrary/cdt.managedbuild.config.llvm.clang.win32.mingw.exe.debug.744503438/append=true
+environment/buildEnvironmentLibrary/cdt.managedbuild.config.llvm.clang.win32.mingw.exe.debug.744503438/appendContributed=true
